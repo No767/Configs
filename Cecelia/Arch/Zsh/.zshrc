@@ -23,8 +23,8 @@ alias aio-adns="cd '/mnt/d/GitHub Repos [Local]/AIO-ADNS'"
 alias repos="cd '/mnt/d/GitHub Repos [Local]'"
 alias github="cd '/mnt/d/GitHub Repos [Local]'"
 alias projects="cd '/mnt/d/Projects'"
-
-source $HOME/antigen.zsh
+alias miku="cd '/mnt/d/GitHub Repos [Local]/Miku'"
+source $HOME/.antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -33,7 +33,6 @@ antigen bundle zpm-zsh/colors
 antigen bundle xylous/gitstatus
 antigen bundle caarlos0/zsh-pg
 antigen bundle zpm-zsh/title
-antigen theme romkatv/powerlevel10k
 antigen apply
 
 # Open Up Rust's Env
@@ -54,6 +53,9 @@ export PATH="$PNPM_HOME:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Force change into home folder (for alacritty)
+# cd ~
 
 # Open up Starship
 eval "$(starship init zsh)"
