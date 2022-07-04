@@ -1,0 +1,17 @@
+shell:
+  program: /bin/zsh
+
+font:
+  normal:
+    family: JetBrains Mono Regular Nerd Font
+    style: Regluar
+
+  bold:
+    family: JetBrains Mono Bold Nerd Font
+    style: Bold
+
+  italic: 
+    family: JetBrains Mono Italic Nerd Font
+    style: Italic
+
+  size: 11.0
