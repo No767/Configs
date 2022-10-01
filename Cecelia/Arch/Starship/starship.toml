@@ -68,6 +68,11 @@ format = '\[[$symbol($version)]($style)\]'
 [helm]
 format = '\[[$symbol($version)]($style)\]'
 
+[hostname]
+ssh_only = true
+format = "[$hostname](bold #ff96fc)"
+disabled = false
+
 [hg_branch]
 format = '\[[$symbol$branch]($style)\]'
 
@@ -150,7 +155,7 @@ format = '\[[$symbol$workspace]($style)\]'
 format = '\[[$time]($style)\]'
 
 [username]
-format = '\[[$user]($style)\]'
+format = '[$user](bold #ff96fc)'
 
 [vagrant]
 format = '\[[$symbol($version)]($style)\]'
@@ -160,4 +165,3 @@ format = '\[[$symbol($version)]($style)\]'
 
 [zig]
 format = '\[[$symbol($version)]($style)\]'
-
